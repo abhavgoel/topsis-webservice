@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="post" enctype="multipart/form-data">
+  <label for="file_name">File</label>
+  <input name="file" type="file" required />
+
+  <label for="weights">Weights</label>
+  <input name="weights" required />
+
+  <label for="impacts">Impacts</label>
+  <input name="impacts" required />
+
+  <label for="email_id">Email Id</label>
+  <input name="email_id" type="email" />
+
+  <input class="btn" type="submit" value="Submit" />
+</form>
+{% endblock content %}
